@@ -240,3 +240,340 @@
   list-style-type:none;
   line-height:32px
 }
+
+/* details page */
+
+.detailstab{
+  position:sticky;
+  top:0;
+  z-index:1;
+  text-transform:capitalize;
+  width:100%;
+  height:80px;
+  background:var(--primary);
+  display:flex;
+  justify-content:flex-start;
+  align-items:flex-end;
+  gap:20px;
+  padding:0px 0px 16px 80px;
+  margin-bottom:20px;
+  box-shadow:1px 1px 8px var(--tertiary);
+}
+
+.detail-name-container{
+  width:100%;
+  height:40px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:0px 80px 0px 70px;
+  margin-bottom:12px;
+}
+.detail-name-container-actions{
+  font-size:var(--s);
+  width:140px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+}
+
+.detail-name{
+  font-size:var(--mxx);
+  text-transform:capitalize;
+}
+
+.detail-photos-container{
+  width:90%;
+  height:300px;
+  background:var(--primary);
+  border-radius:20px;
+  display:flex;
+  gap:8px;
+}
+.main-image{
+  width:50%;
+  height:100%;
+  background:var(--tertiary);
+  border-top-left-radius:inherit;
+  border-bottom-left-radius:inherit;
+}
+
+.other-images{
+  width:50%;
+  height:100%;
+  border-top-right-radius:inherit;
+  border-bottom-right-radius:inherit;
+  display:flex;
+  flex-flow:row wrap;
+  gap:8px;
+}
+.other-image{
+  width:49%;
+  height:calc(50% -8px);
+  background:var(--tertiary);
+}
+.other-image-top{
+  border-top-right-radius:inherit;
+}
+.other-image-bottom{
+  border-bottom-right-radius:inherit;
+}
+
+.detail-type{
+  font-size:20px;
+  width:100%;
+  height:auto;
+  text-transform:capitalize;
+  padding-inline:70px;
+  margin-top:20px;
+}
+.detail-peeksummary{
+  text-transform:capitalize;
+  padding-inline:70px;
+  margin-top:4px;
+}
+.peeksummary{
+  text-transform:capitalize;
+  margin-right:4px;
+}
+
+.show-all-photos{
+  font-size:14px;
+  width:160px;
+  height:30px;
+  background:var(--primary);
+  border-radius:4px;
+  display:flex;
+  justify-content:space-around;
+  align-items:center;
+  position:absolute;
+  bottom:24px;
+  right:12px;
+  padding:4px 4px;
+}
+
+.provider-peeksummary{
+  width:50%;
+  height:80px;
+  left:70px;
+  border-bottom:1px solid var(--tertiary);
+  padding:4px 0px;
+  margin:40px 0px 12px;
+}
+.provider-dp{
+  width:50px;
+  aspect-ratio:1;
+  border-radius:50%;
+  background:var(--tertiary);
+}
+.provider-name{
+  left:60px;
+  top:-52px;
+}
+.provider-duration{
+  text-transform:capitalize;
+  font-size:var(--s);
+  top:-40px;
+  left:60px;
+}
+
+.other-ammenities{
+  width:50%;
+  height:auto;
+  left:70px;
+  color:grey;
+  font-size:14px;
+  border-bottom:1px solid var(--tertiary);
+  display:flex;
+  flex-flow:column nowrap;
+  justify-content:space-around;
+  align-items:flex-start;
+  padding:12px 0px 20px;
+  margin:0px 0px 40px;
+}
+
+.other-ammenities-icon{
+  font-size:28px;
+  color:var(--text);
+}
+.other-ammenities-block{
+  width:100%;
+  height:60px;
+  display:flex;
+  flex-flow:row nowrap;
+  justify-content:flex-start;
+  align-items:flex-start;
+  gap:20px;
+}
+.other-ammenities-header{
+  color:black;
+  display:block;
+  font-size:16px;
+  margin-bottom:4px;
+}
+.detail-description{
+  width:50%;
+  height:260px;
+  left:70px;
+  margin-bottom:40px;
+  border-bottom:1px solid var(--tertiary);
+}
+
+.description-text{
+  line-height:24px;
+}
+.description-showmore{
+  position:absolute;
+  top:200px;
+  left:0px;
+}
+.description-showmore-text{
+  text-decoration:underline;
+}
+.description-showmore-icon{
+  top:2px;
+}
+
+.ammenities{
+  width:50%;
+  max-height:400px;
+  left:70px;
+  border-bottom:1px solid var(--tertiary);
+  padding-bottom:100px;
+  margin-bottom:20px;
+}
+.ammenities-label{
+  font-size:24px;
+}
+.ammenities-list{
+  margin-top:20px;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:space-between;
+  align-items:center;
+  gap:12px;
+}
+.ammenity{
+  flex-shrink:0;
+  width:45%;
+  height:20%;
+  display:flex;
+  justify-content:flex-start;
+  align-items:center;
+  gap:12px;
+  text-transform:capitalize;
+}
+
+.ammenity-icon{
+  font-size:28px;
+}
+.ammenity-text{
+  font-size:14px;
+}
+.showall-ammenities{
+  width:max-content;
+  font-size:14px;
+  height:40px;
+  border:1px solid var(--tertiary);
+  padding:24px 20px;
+  border-radius:10px;
+  top:52px;
+  left:0px;
+}
+/* contact panel */
+.contactpanel-container{
+  position:absolute;
+  top:480px;
+  left:60%;
+  width:35%;
+  height:1080px;
+  border-radius:10px;
+}
+
+.contactpanel-card{
+  width:80%;
+  height:420px;
+  position:sticky;
+  top:120px;
+  left:80%;
+  box-shadow:1px 1px 12px 1px var(--tertiary);
+  border-radius:10px;
+  border:1px solid var(--tertiary);
+  padding:8px 32px;
+}
+
+.contactpanel-price{
+  text-transform:capitalize;
+  font-size:20px;
+  margin-top:12px;
+}
+.contactpanel-activehours{
+  margin-top:40px;
+  width:100%;
+  height:auto;
+  display:flex;
+  flex-flow:row wrap;
+  justify-content:center;
+  align-items:center;
+  border:1px solid var(--tertiary);
+  border-radius:inherit;
+}
+.contactpanel-activehours span{
+  flex-shrink:0;
+  font-size:14px;
+  width:45%;
+  height:30px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+}
+.activehours-label{
+  width:100% !important;
+}
+
+.contactpanel-requesttour{
+  font-size:16px;
+  width:100%;
+  height:60px;
+  margin-top:100px;
+  color:var(--primary);
+  background:var(--accent);
+  border:none;
+  border-radius:inherit;
+}
+.contactpanel-sendmessage{
+  font-size:16px;
+  width:100%;
+  height:60px;
+  margin-top:20px;
+  color:var(--accent);
+  background:var(--primary);
+  border:1px solid var(--accent);
+  border-radius:inherit;
+}
+.location-container{
+  width:80%;
+  height:600px;
+  left:120px;
+  border-bottom:1px solid var(--tertiary);
+  margin-bottom:60px;
+}
+
+.location-label{
+  text-transform:capitalize;
+  font-size:24px;
+}
+.location-map{
+  width:100%;
+  height:400px;
+  background:var(--tertiary) center no-repeat;
+  background-image:url('/imgs/map.png');
+  background-size:cover;
+  border-radius:20px;
+  margin-top:40px;
+}
+
+.location-name{
+  margin-top:20px;
+  font-size:18px;
+}

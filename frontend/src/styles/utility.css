@@ -38,6 +38,10 @@
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     color:var(--text);
   }
+
+  button{
+    text-transform:capitalize;
+  }
  
   .center-self{
     left:50%;

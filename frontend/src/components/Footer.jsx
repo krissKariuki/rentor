@@ -5,7 +5,7 @@ export default function Footer()
             
             <div className="foot company-info">
                 <div>
-                    <span className='company-name'>Rentors.com</span>
+                    <span className='company-name'>Rentor.com</span>
 
                     <p className="copyright">c 2025 Rentors,Inc.</p>
 
