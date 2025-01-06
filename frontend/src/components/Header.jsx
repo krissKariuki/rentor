@@ -2,11 +2,9 @@
 import { useState } from 'react'
 import Logo from './Logo'
 import Searchbar from './Searchbar'
-import Dpmenu from './Dpmenu'
 
-export default function Header()
+export default function Header(props)
 {
-    const [showDpmenu, setShowDpmenu] = useState(false)
 
     return(
         <>
@@ -18,14 +16,13 @@ export default function Header()
                 <span className="material-symbols-outlined add-property-icon">add</span>
             </div>
 
-            <div className="dp-container">
-            <button className="dp-menuicon material-symbols-outlined">menu</button>
+            <div className="account-container" onClick={props.handleAccountmenuClick}>
+            <button className="account-menuicon material-symbols-outlined">menu</button>
             <div className="dp">
                 <img src="/imgs/dp.avif" alt="dp" className="dp-img" />
             </div>
             </div>
         </div>
-        {showDpmenu && <Dpmenu/>}
         </>
     )
 }

@@ -1,7 +1,7 @@
 export default function Propertycard(props)
 {
     return(
-        <div className="propertycard" onClick={props.handleClick}>
+        <div className="propertycard" onClick={props.handlePropertycardClick}>
             <div className="propertycard-image">
             <img src={props.image} alt="property" className="propertycard-img"/>
             <span className="material-symbols-outlined propertycard-favourite">favorite</span>

@@ -6,10 +6,12 @@ import Filters from "./Filterstab"
 import Propertycard from "./propertycard"
 import Footerpanel from "./Footerpanel"
 import Signuppanel from "./Signuppanel"
+import Accountmenu from './Accountmenu'
 
-export default function Homepage()
+export default function Homepage(props)
 {
 
+    const [showAccountmenu, setShowAccountmenu] = useState(false)
     const [propertycards,setPropertycards]=useState(false)
     const[signuppanel,setSignuppanel]=useState(false)
 
@@ -22,10 +24,21 @@ export default function Homepage()
 
     fetchPropertycards("/db/data.json")
 
+    const handleAccountmenuClick=()=>{
+        setShowAccountmenu(!showAccountmenu)
+    }
+    const handleSignupClick=()=>{
+        setSignuppanel(!signuppanel)
+        setShowAccountmenu(false)
+    }
+    const handleSignuppanelCollapse=()=>{
+        setSignuppanel(false)
+    }
     return(
         <>
-        {signuppanel && <Signuppanel/>}
-        <Header/>   
+        {showAccountmenu && <Accountmenu handleSignupClick={handleSignupClick}/>}
+        {signuppanel && <Signuppanel handleSignuppanelCollapse={handleSignuppanelCollapse}/>}
+        <Header handleAccountmenuClick={handleAccountmenuClick}/>   
         <div className="categories-container">
         <Categories/>
         <Filters/>
@@ -38,7 +51,7 @@ export default function Homepage()
                 {
                     return <Propertycard 
                     key={index}
-                    handleClick={()=>console.log("clicked a property card")}
+                    handlePropertycardClick={props.handlePropertycardClick}
                     image={propertycard.image}
                     name={propertycard.name}
                     location={propertycard.location}

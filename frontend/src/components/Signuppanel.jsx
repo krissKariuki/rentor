@@ -5,7 +5,7 @@ export default function Siguppanel(props)
         <div className="signuppanel">
             <p className='signuppanel-label'>
                 <button 
-                className="material-symbols-outlined signuppanel-labelicon">close
+                className="material-symbols-outlined signuppanel-labelicon" onClick={props.handleSignuppanelCollapse}>close
                 </button>
 
                 Log in or Sign up</p>
@@ -14,7 +14,7 @@ export default function Siguppanel(props)
             <form action="" autofill="0" className="signuppanel-form">
                 <label className='formlabel-countrycode'>
                     <span>Country code</span>
-                    <input type="tel" value="Kenya (+254)" name="country-code"/>
+                    <input type="tel" value="Kenya (+254)" readonly name="country-code"/>
                 </label>
 
                 <label className='formlabel-phone'>
@@ -27,12 +27,12 @@ export default function Siguppanel(props)
 
                 <p className="signuppanel-or"><span>or</span></p>
 
-                <label className='continue-with cw-google' htmlFor="">
+                <label className='continue-with cw-google'>
                     <span className="fa-brands fa-google"></span>
                     <span>continue with google</span>
                 </label>
 
-                <label className="continue-with cw-facebook" htmlFor="">
+                <label className="continue-with cw-facebook">
                     <span className="fa-brands fa-facebook"></span>
                     <span>continue with facebook</span>
                     </label>

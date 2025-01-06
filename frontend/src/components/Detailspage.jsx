@@ -45,15 +45,25 @@ export default function Detailspage()
         </div>
 
         <div className="center-self detail-photos-container">
-            <div className="main-image"></div>
+            <div className="main-image">
+            <img src="/imgs/finary-1.jpg" alt="image" className="detailspage-img" />
+            </div>
 
             <div className="other-images">
-            <div className='other-image'></div>
-            <div className='other-image other-image-top'></div>
-            <div className='other-image'></div>
+            <div className='other-image'>
+                <img src="/imgs/simon-1.jpg" alt="image" className="detailspage-img" />
+            </div>
+            <div className='other-image other-image-top'>
+            <img src="/imgs/shady-1.jpg" alt="image" className="detailspage-img" />
+            </div>
+            <div className='other-image'>
+            <img src="/imgs/hilltop-1.jpg" alt="image" className="detailspage-img" />
+            </div>
             <div className='other-image other-image-bottom'>
+                
+            <img src="/imgs/hillside-1.jpg" alt="image" className="detailspage-img" />
                 <div className="show-all-photos">
-                    <span className="material-symbols-outlined">apps</span>
+                    <span className="material-symbols-outlined showallphotos-icon">apps</span>
                     <span>Show all photos</span>
                 </div>
             </div>

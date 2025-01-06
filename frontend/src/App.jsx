@@ -6,7 +6,18 @@ import Detailspage from './components/Detailspage'
 
 export default function App() {
 
+  const [showDetailspage, setShowDetailspage] = useState(false)
+  const [showHomepage, setShowHomePage] = useState(true)
+
+  const handlePropertycardClick=()=>{
+    setShowDetailspage(!showDetailspage)
+    setShowHomePage(!showHomepage)
+  }
+
   return (
-    <Homepage/>
+    <>
+      {showHomepage && <Homepage handlePropertycardClick={handlePropertycardClick}/>}
+      {showDetailspage && <Detailspage/>}
+    </>
   )
 }
