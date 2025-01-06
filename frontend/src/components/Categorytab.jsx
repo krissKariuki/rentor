@@ -1,9 +1,9 @@
-export default function Categorytab()
+export default function Categorytab(props)
 {
     return(
         <p className="category-tab">
-            <span className="material-symbols-outlined">account_circle</span>
-            <span>category</span>
+            <span className="material-symbols-outlined category-icon">{props.icon}</span>
+            <span>{props.name}</span>
         </p>
     )
 }

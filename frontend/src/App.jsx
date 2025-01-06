@@ -7,6 +7,6 @@ import Detailspage from './components/Detailspage'
 export default function App() {
 
   return (
-    <Detailspage/>
+    <Homepage/>
   )
 }

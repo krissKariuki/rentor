@@ -35,11 +35,14 @@
   body{
     margin:0 auto;
     font-size:1rem;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color:var(--text);
   }
-
+  input{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
   button{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-transform:capitalize;
   }
  
