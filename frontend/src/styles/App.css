@@ -28,7 +28,7 @@
   padding-inline:8px;
   border:1px solid var(--tertiary);
   border-radius:60px;
-  box-shadow:2px 2px 4px var(--tertiary);
+  box-shadow:2px 2px 12px var(--tertiary);
 }
 
 .search-input{
@@ -49,14 +49,15 @@
 }
 
 .add-property-container{
-  width:120px;
+  width:max-content;
   height:40px;
   left:60px;
   display:flex;
   justify-content:center;
   align-items:center;
   gap:4px;
-  border-radius:10px;
+  border-radius:20px;
+  padding:0px 12px;
 }
 .add-property-container:hover{
   background:var(--secondary);
@@ -81,7 +82,10 @@
   justify-content:space-between;
   align-items:center;
   gap:16px;
-  padding:8px 8px;;
+  padding:8px 8px;
+}
+.account-container:hover{
+  background:var(--secondary);
 }
 .account-menuicon{
   background:inherit;
@@ -153,24 +157,34 @@
   display:flex;
   justify-content:flex-start;
   align-items:center;
-  gap:44px;
+  gap:32px;
   padding:0px 60px;
   overflow:scroll;
 }
 
 .category-tab{
-  color:grey;
+  min-width:60px;
+  height:100%;
+  color:grey!important;
+  background:var(--primary);
+  border:none;
   font-size:var(--s);
   flex-shrink:0;
   display:flex;
   flex-flow:column wrap;
-  justify-content:space-around;
+  justify-content:  center;
   align-items:center;
+}
+.active-categorytab{
+  color:var(--text) !important;
+  border-bottom:2px solid var(--text);
+}
+.category-tab:hover{
+  color: var(--text) !important;;
 }
 .category-icon{
   font-size:var(--mxx);
 }
-
 .categories-nav{
   position:absolute;
   background:var(--primary);
@@ -179,6 +193,10 @@
   aspect-ratio:1;
   border-radius:50%;
   z-index:2;
+}
+.categories-nav:hover{
+  background:var(--secondary);
+  border:1px solid black;
 }
 .cn-left{
   left:40px;
@@ -196,6 +214,10 @@
   border:1px solid var(--tertiary);
   border-radius:10px;
   padding:8px 16px;
+}
+.filters:hover{
+  background:var(--secondary);
+  border:1px solid black;
 }
 .filter-icon{
   font-size:20px;
@@ -378,7 +400,7 @@
 /* propertycard */
 .propertycard{
   flex-shrink:0;
-  width:23.25%;
+  width:23.2%;
   height:360px;
   background:var(--primary);
 }
