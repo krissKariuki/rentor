@@ -1,38 +1,38 @@
 {
     "listings":[
         {
-            "category":"new","name":"Kingfisher flats","location":"karen,Nairobi","rooms":"2 bedroom","price":"KES 24,000","rating":"4.8","image":"imgs/kingfisher-1.jpg"
+            "name":"Kingfisher flats","location":"karen,Nairobi","rooms":"2 bedroom","price":"KES 24,000","rating":"4.8","image":"imgs/kingfisher-1.jpg"
         },
         {
-            "category":"new","name":"coche flats","location":"Ngong,kajiado","rooms":"1 bedroom","price":"KES 18,000","rating":"4.4","image":"imgs/coche-1.jpg"
+            "name":"coche flats","location":"Ngong,kajiado","rooms":"1 bedroom","price":"KES 18,000","rating":"4.4","image":"imgs/coche-1.jpg"
         },
         {
-            "category":"new","name":"Hyrax apartments","location":"Ngong hills,kajiado","rooms":"4 bedroom","price":"KES 48,000","rating":"4.6","image":"imgs/hyrax-1.jpg"
+            "name":"Hyrax apartments","location":"Ngong hills,kajiado","rooms":"4 bedroom","price":"KES 48,000","rating":"4.6","image":"imgs/hyrax-1.jpg"
         },
         {
-            "category":"new","name":"hillside homes","location":"kibiko,ngong","rooms":"3 bedroom","price":"KES 60,000","rating":"4.9","image":"imgs/hillside-1.jpg"
+            "name":"hillside homes","location":"kibiko,ngong","rooms":"3 bedroom","price":"KES 60,000","rating":"4.9","image":"imgs/hillside-1.jpg"
         },
         {
-            "category":"new","name":"platinum apartments","location":"kilimani,Nairobi","rooms":"4 bedroom","price":"KES 124,000","rating":"5.0","image":"imgs/platinum-1.jpg"
+            "name":"platinum apartments","location":"kilimani,Nairobi","rooms":"4 bedroom","price":"KES 124,000","rating":"5.0","image":"imgs/platinum-1.jpg"
         },
         {
-            "category":"new","name":"bernard's palace","location":"Runda,kiambu","rooms":"2 bedroom","price":"KES 84,000","rating":"4.6","image":"imgs/bernards-1.jpg"
+            "name":"bernard's palace","location":"Runda,kiambu","rooms":"2 bedroom","price":"KES 84,000","rating":"4.6","image":"imgs/bernards-1.jpg"
         },
         {
-            "category":"new","name":"finary complex","location":"kilimani,Nairobi","rooms":"3 bedroom","price":"KES 144,000","rating":"4.9","image":"imgs/finary-1.jpg"
+            "name":"finary complex","location":"kilimani,Nairobi","rooms":"3 bedroom","price":"KES 144,000","rating":"4.9","image":"imgs/finary-1.jpg"
         },
 
 
         {
-            "category":"new","name":"shady flats","location":"karen,Nairobi","rooms":"2 bedroom","price":"KES 84,000","rating":"4.8","image":"imgs/shady-1.jpg"
+            "name":"shady flats","location":"karen,Nairobi","rooms":"2 bedroom","price":"KES 84,000","rating":"4.8","image":"imgs/shady-1.jpg"
         }, {
-            "category":"new","name":"simon house","location":"embul-bul-karen,Nairobi","rooms":"2 bedroom","price":"KES 44,000","rating":"4.7","image":"imgs/simon-1.jpg"
+            "name":"simon house","location":"embul-bul-karen,Nairobi","rooms":"2 bedroom","price":"KES 44,000","rating":"4.7","image":"imgs/simon-1.jpg"
         },
         {
-            "category":"new","name":"hilltop apartments","location":"hilltop,Ngong","rooms":"4 bedroom","price":"KES 114,000","rating":"4.6","image":"imgs/hilltop-1.jpg"
+            "name":"hilltop apartments","location":"hilltop,Ngong","rooms":"4 bedroom","price":"KES 114,000","rating":"4.6","image":"imgs/hilltop-1.jpg"
         },
         {
-            "category":"new","name":"valley road heights","location":"nairobi,Nairobi","rooms":"3 bedroom","price":"KES 184,000","rating":"4.9","image":"imgs/valley-1.jpg"
+            "name":"valley road heights","location":"nairobi,Nairobi","rooms":"3 bedroom","price":"KES 184,000","rating":"4.9","image":"imgs/valley-1.jpg"
         }
         
     ]

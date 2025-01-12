@@ -1,4 +1,4 @@
-import {useState} from "react"
+import {useState,useEffect} from "react"
 
 import Header from "./Header"
 import Categories from "./Categories"
@@ -10,20 +10,32 @@ import Accountmenu from './Accountmenu'
 
 export default function Homepage(props)
 {
-
+    const[categories,setCategories]=useState(null)
+    const[activeCategory,setActiveCategory]=useState('new')
     const [showAccountmenu, setShowAccountmenu] = useState(false)
     const [propertycards,setPropertycards]=useState(false)
     const[signuppanel,setSignuppanel]=useState(false)
 
-    const fetchPropertycards=(url)=>{
-        fetch(url)
-        .then(response=>response.json())
-        .then(data=>setPropertycards(data.listings))
-        .catch(error=>console.log(error))
+
+    const determineActiveCategory=(category)=>
+    {
+        setActiveCategory(category)
+        const categoryIndex=categories.findIndex((cat)=>cat.name===category)
+        return setPropertycards(categories[categoryIndex].listings)
     }
 
-    fetchPropertycards("/db/data.json")
+    const handleCategorytabClick=(category)=>{
+        determineActiveCategory(category)
+        setActiveCategory(category)
+    }
 
+    const fetchPropertycards=async(url)=>{
+        const response=await fetch(url)
+        const result=await response.json()
+
+        setCategories(result.categories)
+        setPropertycards(result.categories[0].listings)
+    }
     const handleAccountmenuClick=()=>{
         setShowAccountmenu(!showAccountmenu)
     }
@@ -34,13 +46,21 @@ export default function Homepage(props)
     const handleSignuppanelCollapse=()=>{
         setSignuppanel(false)
     }
+
+    useEffect(() => {
+    fetchPropertycards("./db/data-1.json")
+    },[])
     return(
         <>
         {showAccountmenu && <Accountmenu handleSignupClick={handleSignupClick}/>}
         {signuppanel && <Signuppanel handleSignuppanelCollapse={handleSignuppanelCollapse}/>}
         <Header handleAccountmenuClick={handleAccountmenuClick}/>   
         <div className="categories-container">
-        <Categories/>
+        {categories && <Categories 
+        handleCategorytabClick={handleCategorytabClick} 
+        categories={categories}
+        activeCategory={activeCategory}
+        />}
         <Filters/>
         <div className="categories-other"></div>
         </div>
