@@ -7,6 +7,7 @@ import Propertycard from "./propertycard"
 import Footerpanel from "./Footerpanel"
 import Signuppanel from "./Signuppanel"
 import Accountmenu from './Accountmenu'
+import Confirmationpanel from './Confirmationpanel'
 
 export default function Homepage(props)
 {
@@ -20,8 +21,8 @@ export default function Homepage(props)
     const determineActiveCategory=(category)=>
     {
         setActiveCategory(category)
-        const categoryIndex=categories.findIndex((cat)=>cat.name===category)
-        return setPropertycards(categories[categoryIndex].listings)
+        const categoryIndex=categories.findIndex(cat=>cat.name===category)
+        setPropertycards(categories[categoryIndex].listings)
     }
 
     const handleCategorytabClick=(category)=>{
@@ -48,10 +49,11 @@ export default function Homepage(props)
     }
 
     useEffect(() => {
-    fetchPropertycards("./db/data-1.json")
+    fetchPropertycards("./db/data.json")
     },[])
     return(
         <>
+        <Confirmationpanel/>
         {showAccountmenu && <Accountmenu handleSignupClick={handleSignupClick}/>}
         {signuppanel && <Signuppanel handleSignuppanelCollapse={handleSignuppanelCollapse}/>}
         <Header handleAccountmenuClick={handleAccountmenuClick}/>   
